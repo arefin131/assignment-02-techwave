@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* shared style */
+.display-flex {
+  display: flex;
+}
+
+/* navbar related style */
+.bg-color {
+  background: #1a0b2e;
+}
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 32px;
+}
+.logo-text {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.logo-text span {
+  background: linear-gradient(90deg, #f7e93f 0%, #fb09b4 51%, #9100f8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-list {
+  list-style: none;
+  gap: 32px;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ffffff;
+  margin-right: 32px;
+}
+.nav-link:hover {
+  color: #d9d9dc;
+}
+
+.subscribe-btn {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  padding: 13px 16px;
+  border: none;
+  border-radius: 10000px;
+  background: linear-gradient(135deg, #f7e93f 0%, #fb09b4 51%, #9100f8 100%);
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(255, 60, 172, 0.4);
+  transition: transform 0.2s ease;
+}
+.subscribe-btn:hover {
+  transform: translateY(-2px);
+}
