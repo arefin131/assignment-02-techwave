@@ -271,4 +271,22 @@
     font-size: 0.875rem;
     padding: 0 10px;
   }
+
+  .about {
+    padding: 40px 20px;
+  }
+  .about-text h2 {
+    font-size: 2.43rem;
+  }
+  .about-text p {
+    margin-bottom: 20px;
+  }
+  .about hr {
+    margin: 40px auto;
+  }
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+   }
 }
