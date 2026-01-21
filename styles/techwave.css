@@ -178,6 +178,58 @@
   width: 18px;
 }
 
+/* About The Podcast Related Style */
+.about {
+  padding: 50px 200px 120px 200px;
+  background: #1a0b2e;
+}
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.about-text {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+.about-text h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+.about-text p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #a4a2a2;
+  line-height: 20px;
+  margin-bottom: 40px;
+}
+.about hr {
+  margin: 80px auto;
+  border: none;
+  height: 1px;
+  max-width: 1200px;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 80px;
+  text-align: center;
+}
+.stat-item h3 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #00ff88;
+  margin-bottom: 12px;
+}
+.stat-item span {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #a4a2a2;
+}
 @media screen and (max-width: 576px) {
   .nav-list {
     display: none;
@@ -195,31 +247,28 @@
     padding: 16px 20px;
   }
 
-  .hero{
+  .hero {
     padding: 40px 20px 40px;
   }
-  .circle{
+  .circle {
     width: 250px;
     height: 250px;
     padding-top: 40px;
   }
-  .mic-img{
+  .mic-img {
     width: 80px;
   }
-  .badge{
+  .badge {
     top: 30px;
     right: -5px;
     font-size: 1rem;
     padding: 8px 16px;
   }
-  .hero h1{
+  .hero h1 {
     font-size: 2rem;
   }
-  .hero p{
+  .hero p {
     font-size: 0.875rem;
     padding: 0 10px;
   }
-  
-
-
 }
