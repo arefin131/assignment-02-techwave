@@ -29,7 +29,6 @@
   justify-content: space-between;
   align-items: center;
   max-width: 1200px;
-
   margin: 0 auto;
   padding: 20px 32px;
 }
@@ -74,4 +73,29 @@
 }
 .subscribe-btn:hover {
   transform: translateY(-2px);
+}
+
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+  .nav-list {
+    display: none;
+  }
+
+  .subscribe-btn {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    color: #ffffff;
+    font-size: 24p x;
+    cursor: pointer;
+  }
+
+  .navbar {
+    padding: 16px 20px;
+  }
 }
