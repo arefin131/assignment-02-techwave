@@ -16,13 +16,18 @@
 /* shared style */
 
 .nav-list,
-.navbar {
+.navbar,
+.circle,
+.hero-actions,
+.spotify,
+.subscribe-msg {
   display: flex;
 }
 
 /* navbar related style */
 .bg-color {
   background: #1a0b2e;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .navbar {
@@ -59,7 +64,8 @@
   color: #d9d9dc;
 }
 
-.subscribe-btn {
+.subscribe-btn,
+.spotify {
   font-size: 1rem;
   font-weight: 600;
   color: #ffffff;
@@ -71,7 +77,9 @@
 
   transition: transform 0.2s ease;
 }
-.subscribe-btn:hover {
+.subscribe-btn:hover,
+.spotify:hover,
+.subscribe-msg:hover {
   transform: translateY(-2px);
 }
 
@@ -79,23 +87,139 @@
   display: none;
 }
 
+/* hero section related style */
+.hero {
+  background: url(../assets/hero-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 120px 20px 100px;
+  position: relative;
+  overflow: hidden;
+}
+.hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+.circle {
+  width: 350px;
+  height: 350px;
+  margin: 0 auto 32px;
+  position: relative;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.circle-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.mic-img {
+  width: 116px;
+  z-index: 2;
+}
+.badge {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  background: #00ff88;
+  color: #1a0b2e;
+  font-size: 1.12rem;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 1000px;
+  box-shadow: 0 3px 24px 0 #00ff88;
+}
+
+.hero h1 {
+  font-size: 3.75rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-top: 40px;
+  margin-bottom: 8px;
+}
+.hero p {
+  max-width: 550px;
+  margin: 0 auto 24px;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #a4a4a4;
+}
+
+.hero-actions {
+  justify-content: center;
+  gap: 8px;
+}
+
+.spotify {
+  align-items: center;
+  gap: 5px;
+}
+
+.subscribe-msg {
+  align-items: center;
+  gap: 5px;
+  padding: 12px 22px;
+  border-radius: 10000px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: #00ff88;
+  background: transparent;
+  border: 1px solid #00ff88;
+}
+
+.spotify img,
+.subscribe-msg img {
+  width: 18px;
+}
+
 @media screen and (max-width: 576px) {
   .nav-list {
     display: none;
   }
-
   .subscribe-btn {
     display: none;
   }
-
   .hamburger {
     display: block;
     color: #ffffff;
-    font-size: 24p x;
+    font-size: 24px;
     cursor: pointer;
   }
-
   .navbar {
     padding: 16px 20px;
   }
+
+  .hero{
+    padding: 40px 20px 40px;
+  }
+  .circle{
+    width: 250px;
+    height: 250px;
+    padding-top: 40px;
+  }
+  .mic-img{
+    width: 80px;
+  }
+  .badge{
+    top: 30px;
+    right: -5px;
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+  .hero h1{
+    font-size: 2rem;
+  }
+  .hero p{
+    font-size: 0.875rem;
+    padding: 0 10px;
+  }
+  
+
+
 }
