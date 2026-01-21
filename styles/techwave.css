@@ -6,6 +6,7 @@
   font-weight: 400;
   font-style: normal;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +14,9 @@
 }
 
 /* shared style */
-.display-flex {
+
+.nav-list,
+.navbar {
   display: flex;
 }
 
@@ -21,10 +24,12 @@
 .bg-color {
   background: #1a0b2e;
 }
+
 .navbar {
   justify-content: space-between;
   align-items: center;
   max-width: 1200px;
+
   margin: 0 auto;
   padding: 20px 32px;
 }
@@ -50,7 +55,6 @@
   font-size: 1rem;
   font-weight: 500;
   color: #ffffff;
-  margin-right: 32px;
 }
 .nav-link:hover {
   color: #d9d9dc;
@@ -65,7 +69,7 @@
   border-radius: 10000px;
   background: linear-gradient(135deg, #f7e93f 0%, #fb09b4 51%, #9100f8 100%);
   cursor: pointer;
-  box-shadow: 0 0 20px rgba(255, 60, 172, 0.4);
+
   transition: transform 0.2s ease;
 }
 .subscribe-btn:hover {
