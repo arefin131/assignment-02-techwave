@@ -302,7 +302,8 @@
   max-width: 1200px;
   margin: 0 auto;
 }
-.section-title {
+.section-title,
+.host h2 {
   font-size: 3rem;
   font-weight: bold;
   color: #ffffff;
@@ -320,28 +321,27 @@
   overflow: hidden;
 }
 .episode-video {
-  position: relative;  
+  position: relative;
 }
 .episode-video iframe {
   width: 380px;
   height: 214px;
 }
-.episode-content{
+.episode-content {
   padding: 20px;
 }
-.episode-content h3{
+.episode-content h3 {
   font-size: 1.3rem;
   color: #ffffff;
   margin-bottom: 12px;
-
 }
-.episode-content p{
+.episode-content p {
   font-size: 1rem;
   color: #bfb9b9;
   line-height: 24px;
   margin-bottom: 16px;
 }
-.duration{
+.duration {
   display: flex;
   align-items: center;
   gap: 6px;
@@ -349,12 +349,56 @@
   font-weight: 600;
   color: #00ff88;
 }
-.duration img{
+.duration img {
   width: 16px;
   height: 16px;
   object-fit: contain;
 }
 
+.host {
+  margin-top: 120px;
+}
+.host-card {
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  gap: 24px;
+  border-radius: 40px;
+  background: #250d44;
+}
+.host-img img {
+  width: 200px;
+  height: 200px;
+}
+.host-content h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+.host-content p {
+  font-size: 1rem;
+  color: #bcb9b9;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+.host-socials {
+  display: flex;
+  gap: 9px;
+}
+.host-socials a {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #533C72;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+.host-socials img{
+  width: 20px;
+  height: 20px;
+}
 
 @media screen and (max-width: 576px) {
   .nav-list {
@@ -435,30 +479,42 @@
     grid-row: auto;
   }
 
-  .featured{
+  .featured {
     padding: 40px 20px;
   }
-  .all-episode{
+  .all-episode {
     grid-template-columns: 1fr;
     gap: 16px;
   }
-  .section-title{
+  .section-title, .host h2 {
     font-size: 2rem;
     margin-bottom: 24px;
   }
-  .episode-content h3{
+  .episode-content h3 {
     font-size: 1.25rem;
     margin-bottom: 8px;
   }
-  .duration{
+  .duration {
     font-size: 1rem;
     margin-top: 8px;
   }
   .episode-video {
-  position: relative;  
-}
-.episode-video iframe {
-  width: 100%;
-  height: 250px;
-}
+    position: relative;
+  }
+  .episode-video iframe {
+    width: 100%;
+    height: 250px;
+  }
+
+  .host{
+    margin-top: 60px;
+  }
+  .host-card{
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 20px;
+  }
+  .host-socials{
+    justify-content: center;
+  }
 }
