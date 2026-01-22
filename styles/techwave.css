@@ -29,6 +29,32 @@
   color: #d9d9dc;
 }
 
+.subscribe-btn,
+.spotify {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  padding: 13px 16px;
+  border: none;
+  border-radius: 10000px;
+  background: linear-gradient(135deg, #f7e93f 0%, #fb09b4 51%, #9100f8 100%);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.subscribe-btn:hover,
+.spotify:hover,
+.subscribe-msg:hover {
+  transform: translateY(-2px);
+}
+.subscribe-btn,
+.spotify,
+.subscribe-msg {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background-position 0.3s ease;
+}
+
 /* navbar related style */
 .bg-color {
   background: #1a0b2e;
@@ -65,26 +91,6 @@
   font-weight: 500;
   color: #ffffff;
 }
-
-.subscribe-btn,
-.spotify {
-  font-size: 1rem;
-  font-weight: 600;
-  color: #ffffff;
-  padding: 13px 16px;
-  border: none;
-  border-radius: 10000px;
-  background: linear-gradient(135deg, #f7e93f 0%, #fb09b4 51%, #9100f8 100%);
-  cursor: pointer;
-
-  transition: transform 0.2s ease;
-}
-.subscribe-btn:hover,
-.spotify:hover,
-.subscribe-msg:hover {
-  transform: translateY(-2px);
-}
-
 .hamburger {
   display: none;
 }
@@ -260,6 +266,13 @@
   background: #351165;
   border-radius: 40px;
   padding: 28px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+.why-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
 }
 .why-card img {
   width: 50px;
@@ -321,6 +334,13 @@
   background: #250d44;
   border-radius: 16px;
   overflow: hidden;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+.episode-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
 }
 .episode-video {
   position: relative;
@@ -431,6 +451,13 @@
   font-size: 1rem;
   color: #b8b8b8;
   cursor: pointer;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+.platform:hover {
+  color: #ffffff;
+  transform: translateY(-2px);
 }
 .platform img {
   width: 24px;
@@ -458,7 +485,7 @@
   .navbar {
     padding: 16px 20px;
   }
-/* hero/banner */
+  /* hero/banner */
   .hero {
     padding: 40px 20px 40px;
   }
@@ -483,7 +510,7 @@
     font-size: 0.875rem;
     padding: 0 10px;
   }
-/* about */
+  /* about */
   .about {
     padding: 40px 20px;
   }
@@ -501,7 +528,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
   }
-/* why choose techWave */
+  /* why choose techWave */
   .why-choose {
     padding: 40px 20px;
   }
@@ -520,7 +547,7 @@
     grid-column: auto;
     grid-row: auto;
   }
-/* featured */
+  /* featured */
   .featured {
     padding: 40px 20px;
   }
@@ -594,6 +621,5 @@
     font-size: 0.8rem;
     line-height: 1.6;
     color: rgba(255, 255, 255, 0.7);
-    
   }
 }
