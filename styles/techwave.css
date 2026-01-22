@@ -293,6 +293,69 @@
   grid-row: 3/4;
 }
 
+/* Feature episode related style */
+.featured {
+  padding: 120px 200px;
+  background: #1a0b2e;
+}
+.featured-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.section-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.all-episode {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.episode-card {
+  background: #250d44;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.episode-video {
+  position: relative;  
+}
+.episode-video iframe {
+  width: 380px;
+  height: 214px;
+}
+.episode-content{
+  padding: 20px;
+}
+.episode-content h3{
+  font-size: 1.3rem;
+  color: #ffffff;
+  margin-bottom: 12px;
+
+}
+.episode-content p{
+  font-size: 1rem;
+  color: #bfb9b9;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+.duration{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #00ff88;
+}
+.duration img{
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+
+
 @media screen and (max-width: 576px) {
   .nav-list {
     display: none;
@@ -367,7 +430,7 @@
   .card-audio,
   .card-mobile,
   .card-global,
-  .card-exclusive{
+  .card-exclusive {
     grid-column: auto;
     grid-row: auto;
   }
