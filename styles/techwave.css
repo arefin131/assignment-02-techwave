@@ -434,4 +434,31 @@
     grid-column: auto;
     grid-row: auto;
   }
+
+  .featured{
+    padding: 40px 20px;
+  }
+  .all-episode{
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .section-title{
+    font-size: 2rem;
+    margin-bottom: 24px;
+  }
+  .episode-content h3{
+    font-size: 1.25rem;
+    margin-bottom: 8px;
+  }
+  .duration{
+    font-size: 1rem;
+    margin-top: 8px;
+  }
+  .episode-video {
+  position: relative;  
+}
+.episode-video iframe {
+  width: 100%;
+  height: 250px;
+}
 }
